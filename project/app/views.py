@@ -18,7 +18,6 @@ from  urllib.parse import urlencode
 #     return redirect(url)
 
 
-
 # def redirect2(request,name,age):
 #     return render(request,'redirect2.html')
 
@@ -37,3 +36,4 @@ def redirect3(request):
     print(request.FILES)
     print(request.COOKIES)
     print(request.method)
+    return render(request, 'redirect3.html', {'x': n, 'y': a})
